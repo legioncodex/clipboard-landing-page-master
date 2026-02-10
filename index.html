@@ -1,196 +1,236 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Clipboard landing page</title>
 
-    <link rel="stylesheet" href="./index.css" />
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 
-  <body>
-    <div class="page">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
 
-      <!-- Hero Section -->
-      <div class="hero-section">
-        <img src="./images/logo.svg" alt="" class="hero-logo" />
+  <title>Frontend Mentor | Clipboard landing page</title>
 
-        <div class="hero-content">
-          <div class="hero-text">
-            <div class="hero-title">A history of everything you copy</div>
-            <div class="hero-description">
-              Clipboard allows you to track and organize everything you copy.
-              Instantly access your clipboard on all your devices.
-            </div>
-          </div>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
 
-          <div class="hero-buttons">
-            <button class="btn btn-ios">Download for iOS</button>
-            <button class="btn btn-mac">Download for Mac</button>
-          </div>
-        </div>
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+</head>
+
+<body>
+
+
+  <div class="px-4 py-5 hero-bg text-center mb-0">
+    <img class="d-block hero-logo mx-auto mb-5" src="./images/logo.svg" alt="logo" width="125">
+
+    <h1 class="display-5 fw-bold clipboard-heading mb-3">A history of everything you copy</h1>
+
+    <div class="col-lg-6 mx-auto">
+      <p class="lead text-description mb-5">
+        Clipboard allows you to track and organize everything you copy.
+        Instantly access your clipboard on all your devices.
+      </p>
+
+      <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-ios btn-lg px-5 rounded-pill fw-bold">Download for iOS</button>
+        <button type="button" class="btn btn-mac btn-lg px-5 rounded-pill fw-bold">Download for Mac</button>
       </div>
+    </div>
+  </div>
 
-      <!-- Features Section -->
-      <div class="features-section">
+  <div class="container text-center mt-6" style="margin-top: 10rem; margin-bottom: 5rem;">
+    <h2 class="fw-bold clipboard-heading mb-3" style="font-size: 2.2rem;">Keep track of your snippets</h2>
+    <div class="col-lg-7 mx-auto">
+      <p class="lead text-description">
+        Clipboard instantly stores any item you copy in the cloud, meaning you can access
+        your snippets immediately on all your devices. Our Mac and iOS apps will help
+        you organize everything.
+      </p>
+    </div>
+  </div>
 
-        <div class="features-header">
-          <div class="features-title">Keep track of your snippets</div>
-          <div class="features-description">
-            Clipboard instantly stores any item you copy in the cloud, meaning
-            you can access your snippets immediately on all your devices. Our
-            Mac and iOS apps will help you organize everything.
-          </div>
+
+  <div class="section-wrapper">
+    <div class="container-fluid">
+      <div class="row align-items-center g-0">
+        
+        <div class="col-12 col-md-6 mb-5 mb-md-0">
+          <img src="./images/image-computer.png" alt="computer" class="monitor-crop img-fluid">
         </div>
 
-        <div class="features-main">
-          <img src="./images/image-computer.png" alt="" class="features-image" />
-
-          <div class="features-list">
-
-            <div class="feature-item">
-              <div class="feature-title">Quick Search</div>
-              <div class="feature-text">
-                Easily search your snippets by content, category, web address,
-                application, and more.
-              </div>
+        <div class="col-12 col-md-6" style="padding-left: 80px;">
+          <div class="text-box mx-auto ms-md-5 text-center text-md-start">
+            
+            <div class="mb-5">
+              <h2>Quick Search</h2>
+              <p>Easily search your snippets by content, category, web address, application, and more.</p>
             </div>
 
-            <div class="feature-item">
-              <div class="feature-title">iCloud Sync</div>
-              <div class="feature-text">
-                Instantly saves and syncs snippets across all your devices.
-              </div>
+            <div class="mb-5">
+              <h2>iCloud Sync</h2>
+              <p>Instantly saves and syncs snippets across all your devices.</p>
             </div>
 
-            <div class="feature-item">
-              <div class="feature-title">Complete History</div>
-              <div class="feature-text">
-                Retrieve any snippets from the first moment you started using
-                the app.
-              </div>
+            <div>
+              <h2>Complete History</h2>
+              <p>Retrieve any snippets from the first moment you started using the app.</p>
             </div>
 
-          </div>
-        </div>
-
-        <div class="access-section">
-          <div class="access-title">Access Clipboard anywhere</div>
-          <div class="access-description">
-            Whether you’re on the go, or at your computer, you can access all
-            your Clipboard snippets in a few simple clicks.
-          </div>
-        </div>
-
-        <img src="./images/image-devices.png" alt="" class="devices-image" />
-
-        <div class="workflow-header">
-          <div class="workflow-title">Supercharge your workflow</div>
-          <div class="workflow-description">
-            We’ve got the tools to boost your productivity.
-          </div>
-        </div>
-
-        <div class="workflow-features">
-
-          <div class="workflow-item">
-            <img src="./images/icon-blacklist.svg" alt="" class="workflow-icon" />
-            <div class="workflow-text">
-              <div class="workflow-item-title">Create blacklists</div>
-              <div class="workflow-item-description">
-                Ensure sensitive information never makes its way to your
-                clipboard by excluding certain sources.
-              </div>
-            </div>
-          </div>
-
-          <div class="workflow-item">
-            <img src="./images/icon-text.svg" alt="" class="workflow-icon" />
-            <div class="workflow-text">
-              <div class="workflow-item-title">Plain text snippets</div>
-              <div class="workflow-item-description">
-                Remove unwanted formatting from copied text for a consistent
-                look.
-              </div>
-            </div>
-          </div>
-
-          <div class="workflow-item">
-            <img src="./images/icon-preview.svg" alt="" class="workflow-icon" />
-            <div class="workflow-text">
-              <div class="workflow-item-title">Sneak preview</div>
-              <div class="workflow-item-description">
-                Quick preview of all snippets on your Clipboard for easy access.
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="brands">
-          <img src="./images/logo-google.png" alt="" class="brand-logo" />
-          <img src="./images/logo-ibm.png" alt="" class="brand-logo" />
-          <img src="./images/logo-microsoft.png" alt="" class="brand-logo" />
-          <img src="./images/logo-hp.png" alt="" class="brand-logo" />
-          <img src="./images/logo-vector-graphics.png" alt="" class="brand-logo" />
-        </div>
-
-        <div class="cta-section">
-          <div class="cta-text">
-            <div class="cta-title">Clipboard for iOS and Mac OS</div>
-            <div class="cta-description">
-              Available for free on the App Store. Download for Mac or iOS, sync
-              with iCloud and you’re ready to start adding to your clipboard.
-            </div>
-          </div>
-
-          <div class="cta-buttons">
-            <button class="btn btn-ios">Download for iOS</button>
-            <button class="btn btn-mac">Download for Mac</button>
           </div>
         </div>
 
       </div>
+    </div>
+  </div>
 
-      <!-- Footer -->
-      <div class="footer">
 
-        <div class="footer-left">
-          <img src="./images/logo.svg" alt="" class="footer-logo" />
+  <div class="container text-center" style="margin-top: 10rem; margin-bottom: 5rem;">
+    <h2 class="fw-bold clipboard-heading mb-3" style="font-size: 2.2rem;">Access Clipboard anywhere</h2>
+    <div class="col-lg-7 mx-auto">
+      <p class="lead text-description">
+        Whether you're on the go, or at your computer, you can access all your Clipboard
+        snippets in a few simple clicks.
+      </p>
+    </div>
+  </div>
 
-          <div class="footer-links">
 
-            <div class="footer-links-group">
-              <div class="footer-link">FAQs</div>
-              <div class="footer-link">Contact Us</div>
+  <div class="container text-center mb-0"> <img src="./images/image-devices.png" alt="devices" class="img-fluid d-block mx-auto">
+  </div>
+
+
+  <div class="container text-center" style="margin-top: 3rem; margin-bottom: 5rem;">
+    <h2 class="fw-bold clipboard-heading mb-3" style="font-size: 2.2rem;">Supercharge your workflow</h2>
+    <div class="col-lg-7 mx-auto">
+      <p class="lead text-description">
+        We’ve got the tools to boost your productivity.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <div class="container px-4 px-md-5 py-5">
+  
+  <div class="row g-5 py-5 row-cols-1 row-cols-lg-3 text-center">
+    <div class="feature col px-4"> <img src="./images/icon-blacklist.svg" alt="" class="feature-img mb-4">
+      <h3 class="fw-bold">Create blacklists</h3>
+      <p class="text-description">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p> 
+    </div>
+    
+    <div class="feature col px-4">
+      <img src="./images/icon-text.svg" alt="" class="feature-img mb-4">
+      <h3 class="fw-bold">Plain text snippets</h3>
+      <p class="text-description">Remove unwanted formatting from copied text for a consistent look.</p> 
+    </div>
+    
+    <div class="feature col px-4">
+      <img src="./images/icon-preview.svg" alt="" class="feature-img mb-4">
+      <h3 class="fw-bold">Sneak preview</h3>
+      <p class="text-description">Quick preview of all snippets on your Clipboard for easy access.</p> 
+    </div>
+  </div>
+
+  <div class="container my-5 py-5">
+  <div class="row align-items-center brand-logos-container g-4">
+    
+    <div class="col-12 col-lg brand-logo-col">
+      <img src="./images/logo-google.png" alt="Google">
+    </div>
+    
+    <div class="col-12 col-lg brand-logo-col">
+      <img src="./images/logo-ibm.png" alt="IBM">
+    </div>
+    
+    <div class="col-12 col-lg brand-logo-col">
+      <img src="./images/logo-microsoft.png" alt="Microsoft">
+    </div>
+    
+    <div class="col-12 col-lg brand-logo-col">
+      <img src="./images/logo-hp.png" alt="HP">
+    </div>
+    
+    <div class="col-12 col-lg brand-logo-col">
+      <img src="./images/logo-vector-graphics.png" alt="Vector Graphics">
+    </div>
+
+  </div>
+  </div>
+
+  <div class="text-center" style="margin-top: 5rem; margin-bottom: 8rem;">
+    <div class="col-lg-8 mx-auto">
+        <h2 class="fw-bold clipboard-heading mb-4" style="font-size: 2.2rem;">Clipboard for iOS and Mac OS</h2>
+        <p class="lead text-description mb-5">
+          Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+          and you’re ready to start adding to your clipboard.
+        </p>
+    </div>
+
+    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-ios btn-lg px-5 rounded-pill fw-bold">Download for iOS</button>
+      <button type="button" class="btn btn-mac btn-lg px-5 rounded-pill fw-bold">Download for Mac</button>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center text-center text-lg-start">
+        
+        <div class="col-12 col-lg-2 mb-4 mb-lg-0">
+          <img src="./images/logo.svg" alt="Clipboard Logo" class="footer-logo">
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <div class="mb-2"><a href="#" class="footer-link">FAQs</a></div>
+              <div><a href="#" class="footer-link">Contact Us</a></div>
             </div>
-
-            <div class="footer-links-group">
-              <div class="footer-link">Privacy Policy</div>
-              <div class="footer-link">Press Kit</div>
+            <div class="col-12 col-md-4">
+              <div class="mb-2"><a href="#" class="footer-link">Privacy Policy</a></div>
+              <div><a href="#" class="footer-link">Press Kit</a></div>
             </div>
-
-            <div class="footer-link">Install Guide</div>
-
+            <div class="col-12 col-md-4">
+              <div><a href="#" class="footer-link">Install Guide</a></div>
+            </div>
           </div>
         </div>
 
-        <div class="footer-socials">
-          <img src="./images/icon-facebook.svg" alt="" class="social-icon" />
-          <img src="./images/icon-twitter.svg" alt="" class="social-icon" />
-          <img src="./images/icon-instagram.svg" alt="" class="social-icon" />
+        <div class="col-12 col-lg-3 mt-4 mt-lg-0 text-center text-lg-end">
+          <div class="d-flex justify-content-center justify-content-lg-end gap-4">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook" style="width: 24px;"></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter" style="width: 24px;"></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="Instagram" style="width: 24px;"></a>
+          </div>
         </div>
-
       </div>
+
+      <p class="attribution mt-5 mb-0">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Chisom07">Chisom</a>.
+      </p>
 
     </div>
-  </body>
+  </footer>
+
+
+</body>
+
 </html>
