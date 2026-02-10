@@ -1,287 +1,194 @@
-:root {
-  --green-500: hsl(171, 66%, 44%);
-  --blue-100: hsl(233, 100%, 69%);
-  --gray-700: hsl(210, 10%, 33%);
-  --gray-500: hsl(201, 11%, 66%);
-  --font-size: 18px;
-  --font-family: "Bai Jamjuree", sans-serif;
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  width: 100vw;
-  height: 100vh;
-  font-size: var(--font-size);
-  font-family: var(--font-family);
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #4c545d;
 }
 
-.page {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
-  align-items: center;
-  padding: 50px 20px;
+body, html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  height: 100vh;
+.clipboard-heading, .feature h3 {
+    font-weight: 600;
+    color: #4c545d;
+    letter-spacing: -0.5px;
+}
+
+.text-description {
+    font-weight: 400;
+    color: #9fabb2;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Custom background for the hero section (mobile by default)*/
+.hero-bg {
+    background-image: url('./images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 80px !important ;
 }
 .hero-logo {
-  width: 50px;
+    margin-bottom: 50px !important;
 }
-.hero-content {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.hero-title {
-  font-size: 42px;
-  color: var(--gray-700);
-  text-align: center;
-}
-.hero-description {
-  color: var(--gray-500);
-  text-align: center;
-}
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-}
-.btn {
-  padding: 20px 40px;
-  border: none;
-  border-radius: 32px;
-  color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-.btn:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-}
+
+
+/* Specific button colors*/
 .btn-ios {
-  background-color: var(--green-500);
+    background-color: #26bba4;
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 0px 0px #1f9382;
+    transition: all 0.2s ease;
 }
+.btn-ios:hover {
+    background-color: #31d3bc;
+    transform: translateY(-1px);
+}
+
 .btn-mac {
-  background-color: var(--blue-100);
+    background-color: #6173ff;
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 0px 0px #5261d9;
+    transition: all 0.2s ease;
+}
+.btn-mac:hover {
+    background-color: #7a8aff;
+    transform: translateY(-1px);
 }
 
-.features-section {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-items: center;
+
+.brand-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 8rem 0;
+    padding: 0 10%;
 }
-.features-header {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  max-width: 660px;
-}
-.features-title {
-  font-size: 32px;
-  color: var(--gray-700);
-  text-align: center;
-}
-.features-description {
-  color: var(--gray-500);
-  text-align: center;
-}
-.features-main {
-  display: flex;
-  gap: 100px;
-  align-items: center;
-  position: relative;
-  left: -120px;
-}
-.features-image {
-  width: 800px;
-}
-.features-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.feature-item {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 380px;
-}
-.feature-title {
-  font-size: 24px;
-  color: var(--gray-700);
-}
-.feature-text {
-  color: var(--gray-500);
+.brand-logos img {
+    max-height: 40px;
+    width: auto;
+    opacity: 0.7;
 }
 
-.access-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  max-width: 650px;
+/* Feature icon sizing */
+.feature-img {
+    margin-bottom: 2.5rem;
+    height: 40px;
 }
-.access-title {
-  font-size: 32px;
-  color: var(--gray-700);
-  text-align: center;
-}
-.access-description {
-  color: var(--gray-500);
-  text-align: center;
-}
-.devices-image {
-  width: 800px;
+/* Thinner headings for features */
+.feature h3 {
+    font-size: 1.5rem;
+    color: #4c545d;
+    margin-bottom: 1rem;
 }
 
-.workflow-header {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  max-width: 660px;
-}
-.workflow-title {
-  font-size: 32px;
-  color: var(--gray-700);
-  text-align: center;
-}
-.workflow-description {
-  color: var(--gray-500);
-  text-align: center;
-}
-.workflow-features {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.workflow-item {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-  width: 380px;
-}
-.workflow-icon {
-  width: 40px;
-}
-.workflow-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.workflow-item-title {
-  font-size: 24px;
-  color: var(--gray-700);
-}
-.workflow-item-description {
-  color: var(--gray-500);
-  text-align: center;
+
+/* Center logos and handle vertical stacking spacing */
+.brand-logos-container img {
+    max-height: 35px;
+    width: auto;
+    opacity: 0.7;
+    display: block;
+    margin: 0 auto; /* Centers the image inside its column */
 }
 
-.brands {
-  display: flex;
-  gap: 80px;
-  align-items: center;
-}
-.brand-logo {
-  width: 120px;
-}
-
-.cta-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  width: 670px;
-}
-.cta-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.cta-title {
-  font-size: 32px;
-  color: var(--gray-700);
-}
-.cta-description {
-  color: var(--gray-500);
-  text-align: center;
-}
-.cta-buttons {
-  display: flex;
-  gap: 20px;
+/* Add vertical spacing between logos only when they are stacked (mobile + tablet) */
+@media (max-width: 991px) {
+    .brand-logo-col {
+        margin-bottom: 3rem; 
+    }
+    .hero-bg {
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 80px !important ;
+    }
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  padding: 50px;
-  background-color: rgb(245, 245, 245);
-  margin: 0 -20px;
-  align-items: center;
-}
-.footer-left {
-  display: flex;
-  gap: 80px;
-  align-items: center;
+
+footer {
+    background-color: #f5f6f8;
+    padding: 4rem 0 1.5rem 0 !important; 
 }
 .footer-logo {
-  width: 30px;
-}
-.footer-links {
-  display: flex;
-  gap: 50px;
-}
-.footer-links-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    width: 55px;
 }
 .footer-link {
-  color: var(--gray-500);
-  cursor: pointer;
+    text-decoration: none;
+    color: #4c545d;
+    transition: color 0.2s;
+    font-weight: 400;
 }
 .footer-link:hover {
-  color: var(--green-500);
-}
-.footer-socials {
-  display: flex;
-  gap: 20px;
+    color: #26bba4;
 }
 .social-icon {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+    font-size: 1.5rem;
+    color: #4c545d;
+    transition: color 0.2s;
 }
 .social-icon:hover {
-  
+    color: #26bba4;
+}
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    width: 100%;
+    color: #9fabb2;
+}
+.attribution a {
+    color: #6173ff;
+    text-decoration: none;
+}
+
+
+/* Container to prevent horizontal scrollbars */
+.section-wrapper {
+    overflow-x: hidden;
+    padding: 60px 0;
+}
+
+/* The Monitor: Only crops on desktop (md and up) */
+@media (min-width: 768px) {
+    .hero-bg {
+        background-image: url('./images/bg-header-desktop.png');
+        background-size: 100% auto;
+        padding-top: 120px !important;
+    }
+    .monitor-crop {
+        width: 115% !important;
+        max-width: none !important;
+        margin-left: -15% !important;
+    }
+}
+
+/* Mobile Reset: Image fits normally, text centers below it */
+@media (max-width: 767px) {
+    .monitor-crop {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    
+}
+
+.text-box {
+    max-width: 350px;
+}
+.text-box h2 {
+    font-size: 1.5rem;
+    color: #4c545d;
+    font-weight: 600;
+}
+.text-box p {
+    color: #9fabb2;
+    line-height: 1.6;
 }
