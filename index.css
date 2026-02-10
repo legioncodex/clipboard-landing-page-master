@@ -178,6 +178,10 @@ footer {
         margin-bottom: 40px;
     }
     
+    .nate{
+        padding-left: 0;
+    }
+    
 }
 
 .text-box {
@@ -192,3 +196,4 @@ footer {
     color: #9fabb2;
     line-height: 1.6;
 }
+
