@@ -184,6 +184,10 @@ footer {
     
 }
 
+.nate{
+    padding-left: 80px;
+}
+
 .text-box {
     max-width: 350px;
 }
@@ -196,4 +200,5 @@ footer {
     color: #9fabb2;
     line-height: 1.6;
 }
+
 
